@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            float c = TestCase.MaxNumber(95.25f, 90.23f, 101.25f);
+            string c = TestCase.MaxNumber("Peach", "Apple", "Banana"); 
 
 
             Console.WriteLine("Maximum Number is : {0}", c);
