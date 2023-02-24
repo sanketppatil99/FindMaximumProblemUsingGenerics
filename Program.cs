@@ -4,7 +4,11 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to find maximum using generics");
+            int c = TestCase.MaxNumber(59, 45, 56);
+
+
+            Console.WriteLine("Maximum Number is : {0}", c);
+
         }
     }
 }
