@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FindMaximumProblem
 {
-    public class TestCase
+    public class TestCase<T> where T : IComparable
     {
-        public static string MaxNumber(string firstNumber, string secondNumber, string thirdNumber)
+        public static T MaxNumber(T firstNumber, T secondNumber, T thirdNumber)
         {
             if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
             {
@@ -22,10 +22,7 @@ namespace FindMaximumProblem
             {
                 return thirdNumber;
             }
-            else
-            {
-                return null;
-            }
+            throw new Exception("All value are same");
         }
     }
 }
