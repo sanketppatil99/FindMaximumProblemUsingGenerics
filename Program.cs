@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            int c = TestCase.MaxNumber(59, 45, 56);
+            int c = TestCase.MaxNumber(45, 59, 56);
 
 
             Console.WriteLine("Maximum Number is : {0}", c);
